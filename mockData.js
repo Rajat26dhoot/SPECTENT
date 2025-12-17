@@ -6,7 +6,6 @@ export const inspectionData = {
     id: "TECFI00009",
     tag: "FIR00009"
   },
-  // Generated slightly more data to demonstrate functionality across months
   inspections: [
     {
       date: "2026-01-24",
@@ -21,7 +20,7 @@ export const inspectionData = {
       status: "Pending"
     },
     {
-      date: "2026-01-24", // Another on same day to test grouping/stickiness
+      date: "2026-01-24", 
       taskName: "Task Name",
       taskDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing",
       status: "Pending"
@@ -68,16 +67,14 @@ export const inspectionData = {
       taskDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing",
       status: "Satisfactory"
     },
-    // Adding some data for other months to test selector
     {
       date: "2025-12-25",
       taskName: "Task Name",
       taskDescription: "Christmas Check",
       status: "Satisfactory"
     },
-    // More December Data
     {
-      date: "2025-12-17", // Matches user's current date for "Today" test
+      date: "2025-12-17",
       taskName: "Urgent Check",
       taskDescription: "Spot check for safety compliance",
       status: "Pending"
@@ -88,7 +85,6 @@ export const inspectionData = {
       taskDescription: "Standard weekly checkup",
       status: "Satisfactory"
     },
-    // More January 2026 Data
     {
       date: "2026-01-30",
       taskName: "End of Month Review",
@@ -107,7 +103,6 @@ export const inspectionData = {
       taskDescription: "Initial system boot sequence check",
       status: "Failed"
     },
-    // February 2026 Data
     {
       date: "2026-02-14",
       taskName: "Valentine Check",
@@ -133,5 +128,5 @@ export const getInspectionsByMonth = (year, month) => {
   return inspectionData.inspections.filter(item => {
     const d = dayjs(item.date);
     return d.year() === year && d.month() === month;
-  }).sort((a, b) => dayjs(b.date).valueOf() - dayjs(a.date).valueOf()); // Sort descending
+  }).sort((a, b) => dayjs(b.date).valueOf() - dayjs(a.date).valueOf()); 
 };

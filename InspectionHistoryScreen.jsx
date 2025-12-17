@@ -106,6 +106,6 @@ const styles = StyleSheet.create({
         color: '#000',
     },
     listContent: {
-        paddingBottom: 80, // Space for bottom nav
+        paddingBottom: 80, 
     },
 });

@@ -1,5 +1,5 @@
 export const COLORS = {
-    primaryBlue: '#6CA2F1', // Header/Card background
+    primaryBlue: '#6CA2F1', 
     cardGradientStart: '#6CA2F1',
     cardGradientEnd: '#6CA2F1',
     textDark: '#212121',

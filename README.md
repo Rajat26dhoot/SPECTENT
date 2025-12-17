@@ -1,5 +1,7 @@
 # Spectent Inspection App
 
+![App Screenshot](./assets/Screenshot.png)
+
 This is a React Native application built with Expo for managing and viewing inspection history.
 
 ## Prerequisites
